@@ -1,0 +1,79 @@
+Manifest-Version: 1.0
+Export-Package: fr.imag.adele.fede.workspace.si.platformeclipse;versio
+ n="1.0.0"
+iPOJO-Components: component { $immediate="true" $classname="fr.imag.ad
+ ele.fede.workspace.si.platformeclipse.PlatformEclipse" $factory="fr.i
+ mag.adele.fede.workspace.si.platformeclipse.PlatformEclipse" $archite
+ cture="true" callback { $transition="validate" $method="start" }callb
+ ack { $transition="invalidate" $method="stop" }provides { $interface=
+ "fr.imag.adele.fede.workspace.as.platformeclipse.IPlatformEclipse" }m
+ anipulation { field { $name="_cachedInstanceLocation" $type="java.io.
+ File" }field { $name="listeners" $type="java.util.List" }field { $nam
+ e="resourceStarted" $type="boolean" }field { $name="cxt" $type="org.o
+ sgi.framework.BundleContext" }method { $arguments="{org.osgi.framewor
+ k.BundleContext}" $name="$init" }method { $name="start" }method { $na
+ me="stop" }method { $arguments="{fr.imag.adele.fede.workspace.as.plat
+ formeclipse.IPlatformListener}" $name="addListener" }method { $argume
+ nts="{fr.imag.adele.fede.workspace.as.platformeclipse.IPlatformListen
+ er}" $name="removeListener" }method { $name="isResourceStarted" $retu
+ rn="boolean" }method { $name="isUIStarted" $return="boolean" }method 
+ { $arguments="{java.lang.String}" $name="findBundle" $return="org.osg
+ i.framework.Bundle" }method { $arguments="{java.lang.String}" $name="
+ findBundlePrefix" $return="java.util.List" }method { $arguments="{org
+ .osgi.framework.BundleEvent}" $name="bundleChanged" }method { $name="
+ setResourceStarted" }method { $name="setUIStarted" }method { $name="e
+ arlyStartup" }method { $arguments="{org.osgi.framework.BundleExceptio
+ n}" $name="logException" }method { $arguments="{boolean}" $name="getL
+ ocation" $return="java.io.File" }method { $name="waitUI" }method { $n
+ ame="showPrompt" }method { $name="createDisplay" $return="org.eclipse
+ .swt.widgets.Display" }method { $arguments="{org.eclipse.swt.widgets.
+ Shell}" $name="checkInstanceLocation" $return="boolean" }method { $ar
+ guments="{org.eclipse.swt.widgets.Shell,org.eclipse.ui.internal.ide.C
+ hooseWorkspaceData,boolean}" $name="promptForWorkspace" $return="java
+ .net.URL" }method { $arguments="{org.eclipse.swt.widgets.Shell,java.n
+ et.URL}" $name="checkValidWorkspace" $return="boolean" }method { $arg
+ uments="{java.net.URL}" $name="readWorkspaceVersion" $return="java.la
+ ng.String" }method { $arguments="{java.net.URL,boolean}" $name="getVe
+ rsionFile" $return="java.io.File" }method { $arguments="{fr.imag.adel
+ e.fede.workspace.si.platformeclipse.PlatformEclipse}" $name="access$0
+ " }interface { $name="fr.imag.adele.fede.workspace.as.platformeclipse
+ .IPlatformEclipse" }interface { $name="org.osgi.framework.BundleListe
+ ner" }}}instance { $component="fr.imag.adele.fede.workspace.si.platfo
+ rmeclipse.PlatformEclipse" $name="fr.imag.adele.cadse.si.workspace.pl
+ atformeclipse.instance" }
+Bundle-ClassPath: .
+Bundle-Name: fr.imag.adele.cadse.si.workspace.platformeclipse
+Bundle-Localization: plugin
+Created-By: envsam & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & i
+ POJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO 
+ & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPO
+ JO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & 
+ iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO
+  & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iP
+ OJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO &
+  iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJ
+ O & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & i
+ POJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO 
+ & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPO
+ JO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO & iPOJO
+Ant-Version: Apache Ant 1.7.0
+Bundle-Vendor: Adele/LIG/ Grenoble University, France
+Eclipse-LazyStart: false
+ipojo-auto-start: true
+Bundle-Version: 2.2.1.qualifier
+Bundle-ManifestVersion: 2
+Bundle-Description: Bundle fr.imag.adele.cadse.si.workspace.platformec
+ lipse
+Import-Package: org.eclipse.core.runtime, org.apache.commons.logging, 
+ org.eclipse.ui.internal.ide, org.eclipse.swt, org.eclipse.ui, org.apa
+ che.felix.ipojo;version=0.8.0, fr.imag.adele.fede.workspace.si.platfo
+ rmeclipse;version=1.0.0, fr.imag.adele.fede.workspace.as.platformecli
+ pse;version=1.0.0, org.eclipse.osgi.util;version=1.1.0, org.osgi.serv
+ ice.log;version=1.3, org.apache.felix.ipojo.architecture;version=0.8.
+ 0, org.eclipse.core.resources, org.eclipse.swt.graphics, org.osgi.fra
+ mework;version=1.4.0, org.eclipse.osgi.service.datalocation;version=1
+ .0.0, org.osgi.service.cm;version=1.2, org.eclipse.swt.widgets, org.e
+ clipse.ui.internal.ide.application, org.eclipse.jface.dialogs
+Bundle-SymbolicName: fr.imag.adele.cadse.si.workspace.platformeclipse;
+ singleton:=true
+
