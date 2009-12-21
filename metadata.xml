@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo>
+	<component immediate="true" classname="fr.imag.adele.fede.workspace.si.platformeclipse.PlatformEclipse" factory="fr.imag.adele.fede.workspace.si.platformeclipse.PlatformEclipse" architecture="true">
+		<callback transition="validate" method="start"/>
+		<callback transition="invalidate" method="stop"/>
+		<provides specification="fr.imag.adele.fede.workspace.as.platformeclipse.IPlatformEclipse"/>
+	</component>
+	<instance component="fr.imag.adele.fede.workspace.si.platformeclipse.PlatformEclipse" name="fr.imag.adele.cadse.si.workspace.platformeclipse.instance"/>
+</ipojo>
