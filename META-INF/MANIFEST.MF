@@ -33,39 +33,9 @@ iPOJO-Components: component { $immediate="true" $classname="fr.imag.ade
  g.adele.fede.workspace.si.platformeclipse.PlatformEclipse" $architectu
  re="true" callback { $transition="validate" $method="start" }callback 
  { $transition="invalidate" $method="stop" }provides { $specification="
- fr.imag.adele.fede.workspace.as.platformeclipse.IPlatformEclipse" }man
- ipulation { field { $name="_cachedInstanceLocation" $type="java.io.Fil
- e" }field { $name="listeners" $type="java.util.List" }field { $name="r
- esourceStarted" $type="boolean" }field { $name="cxt" $type="org.osgi.f
- ramework.BundleContext" }method { $arguments="{org.osgi.framework.Bund
- leContext}" $name="$init" }method { $name="start" }method { $name="sto
- p" }method { $arguments="{fr.imag.adele.fede.workspace.as.platformecli
- pse.IPlatformListener}" $name="addListener" }method { $arguments="{fr.
- imag.adele.fede.workspace.as.platformeclipse.IPlatformListener}" $name
- ="removeListener" }method { $name="isResourceStarted" $return="boolean
- " }method { $name="isUIStarted" $return="boolean" }method { $arguments
- ="{java.lang.String}" $name="findBundle" $return="org.osgi.framework.B
- undle" }method { $arguments="{java.lang.String}" $name="findBundlePref
- ix" $return="java.util.List" }method { $arguments="{org.osgi.framework
- .BundleEvent}" $name="bundleChanged" }method { $name="setResourceStart
- ed" }method { $name="setUIStarted" }method { $name="earlyStartup" }met
- hod { $arguments="{org.osgi.framework.BundleException}" $name="logExce
- ption" }method { $arguments="{boolean}" $name="getLocation" $return="j
- ava.io.File" }method { $name="waitUI" }method { $name="showPrompt" }me
- thod { $name="createDisplay" $return="org.eclipse.swt.widgets.Display"
-  }method { $arguments="{org.eclipse.swt.widgets.Shell}" $name="checkIn
- stanceLocation" $return="boolean" }method { $arguments="{org.eclipse.s
- wt.widgets.Shell,org.eclipse.ui.internal.ide.ChooseWorkspaceData,boole
- an}" $name="promptForWorkspace" $return="java.net.URL" }method { $argu
- ments="{org.eclipse.swt.widgets.Shell,java.net.URL}" $name="checkValid
- Workspace" $return="boolean" }method { $arguments="{java.net.URL}" $na
- me="readWorkspaceVersion" $return="java.lang.String" }method { $argume
- nts="{java.net.URL,boolean}" $name="getVersionFile" $return="java.io.F
- ile" }method { $arguments="{fr.imag.adele.fede.workspace.si.platformec
- lipse.PlatformEclipse}" $name="access$0" }interface { $name="fr.imag.a
- dele.fede.workspace.as.platformeclipse.IPlatformEclipse" }interface { 
- $name="org.osgi.framework.BundleListener" }}}instance { $component="fr
- .imag.adele.fede.workspace.si.platformeclipse.PlatformEclipse" $name="
- fr.imag.adele.cadse.si.workspace.platformeclipse.instance" }
+ fr.imag.adele.fede.workspace.as.platformeclipse.IPlatformEclipse" }}in
+ stance { $component="fr.imag.adele.fede.workspace.si.platformeclipse.P
+ latformEclipse" $name="fr.imag.adele.cadse.si.workspace.platformeclips
+ e.instance" }
 ipojo-auto-start: true
 
