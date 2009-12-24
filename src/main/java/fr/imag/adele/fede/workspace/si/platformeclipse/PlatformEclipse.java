@@ -50,14 +50,17 @@ import org.osgi.framework.BundleEvent;
 import org.osgi.framework.BundleException;
 import org.osgi.framework.BundleListener;
 
-import fr.imag.adele.fede.workspace.as.platformeclipse.IPlatformEclipse;
-import fr.imag.adele.fede.workspace.as.platformeclipse.IPlatformListener;
+import fr.imag.adele.cadse.as.platformide.IPlatformIDE;
+import fr.imag.adele.cadse.as.platformide.IPlatformListener;
+import fr.imag.adele.cadse.core.CadseException;
+import fr.imag.adele.cadse.core.CadseRuntime;
+import fr.imag.adele.cadse.core.Item;
 
 /**
  * @generated
  * @overwite:add implements BundleListener
  */
-public class PlatformEclipse implements IPlatformEclipse, BundleListener {
+public class PlatformEclipse implements IPlatformIDE, BundleListener {
 
 	/**
 	 * The name of the folder containing metadata information for the workspace.
@@ -590,5 +593,72 @@ public class PlatformEclipse implements IPlatformEclipse, BundleListener {
 			// cannot log because instance area has not been set
 			return null;
 		}
+	}
+
+	public void activateIDE() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void beginRule(Object rule) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void copyResource(Item item, String path, URL data)
+			throws CadseException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void endRule(Object rule) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public File getLocation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean inDevelopmentMode() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public void log(String type, String message, Throwable e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void log(String type, String message, Throwable e, Item item) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void notifieChangedContent(Item item) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public CadseRuntime[] openDialog(boolean askToErase) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void refresh(Item item) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setItemPersistenceID(String projectName, Item item)
+			throws CadseException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setReadOnly(Item item, boolean readonly) {
+		// TODO Auto-generated method stub
+		
 	}
 }
