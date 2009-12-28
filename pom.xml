@@ -27,6 +27,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
+                   		<Bundle-SymbolicName>${pom.name};singleton:=true</Bundle-SymbolicName>
                         <Bundle-Name>${pom.name}</Bundle-Name>
                         <Bundle-Description>${pom.description}</Bundle-Description>
                         <Export-Package>fr.imag.adele.fede.workspace.si.platformeclipse</Export-Package>
