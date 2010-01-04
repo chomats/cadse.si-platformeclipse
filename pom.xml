@@ -8,108 +8,60 @@
     <artifactId>si.platformeIDE</artifactId>
     <name>fr.imag.adele.cadse.si.platformeEclipse</name>
     <version>2.3.0-SNAPSHOT</version>
-    <organization>
-        <name>Adele/LIG/ Grenoble University, France</name>
-        <url>http://www-adele.imag.fr/</url>
-    </organization>
+    <parent>
+		<artifactId>fr.imag.adele.cadse.parent.ipojo</artifactId>
+		<groupId>fr.imag.adele.cadse</groupId>
+		<version>2.3.0-SNAPSHOT</version>
+		<relativePath>../fr.imag.adele.cadse.parent.ipojo</relativePath>
+	</parent>
+	
     <build>
         <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
-                    <manifestLocation>META-INF</manifestLocation>
                     <instructions>
-                   		<Bundle-SymbolicName>${pom.name};singleton:=true</Bundle-SymbolicName>
-                        <Bundle-Name>${pom.name}</Bundle-Name>
-                        <Bundle-Description>${pom.description}</Bundle-Description>
-                        <Export-Package>fr.imag.adele.fede.workspace.si.platformeclipse</Export-Package>
-                        <Private-Package></Private-Package>
-                        <Import-Package>*</Import-Package>
-						<Ipojo-auto-start>true</Ipojo-auto-start>
-                       	<_removeheaders>Bnd-LastModified</_removeheaders>
+                   		<Export-Package>fr.imag.adele.fede.workspace.si.platformeclipse</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>
-            <!-- iPOJO Maven Plugin Configuration : nothing to do -->
-			<plugin>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>maven-ipojo-plugin</artifactId>
-				<version>1.4.0</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>ipojo-bundle</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-
         </plugins>
     </build>
-    <repositories>
-        <repository>
-            <id>maven2-repository.dev.java.net</id>
-            <name>Java.net Repository for Maven</name>
-            <url>http://download.java.net/maven/2/</url>
-            <layout>default</layout>
-        </repository>
-    </repositories>
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>as.platformeIDE</artifactId>
-            <version>${project.version}</version>
         </dependency>
         <dependency>
         	<groupId>org.eclipse</groupId>
         	<artifactId>org.eclipse.osgi</artifactId>
-        	<version>3.5.1.R35x_v20090827</version>
-        </dependency>
-        <dependency>
-        	<groupId>fr.imag.adele.cadse</groupId>
-        	<artifactId>as.platformeIDE</artifactId>
-        	<version>2.3.0-SNAPSHOT</version>
-        	<type>bundle</type>
         </dependency>
         <dependency>
         	<groupId>org.eclipse</groupId>
         	<artifactId>org.eclipse.ui.ide</artifactId>
-        	<version>3.5.1.M20090826-0800</version>
         </dependency>
         <dependency>
         	<groupId>org.eclipse</groupId>
         	<artifactId>swt</artifactId>
-        	<version>3.5.1.v3555a</version>
         	<type>pom</type>
         </dependency>
         <dependency>
         	<groupId>org.eclipse</groupId>
         	<artifactId>org.eclipse.equinox.common</artifactId>
-        	<version>3.5.1.R35x_v20090807-1100</version>
         </dependency>
         <dependency>
         	<groupId>org.eclipse</groupId>
         	<artifactId>org.eclipse.jface</artifactId>
-        	<version>3.5.1.M20090826-0800</version>
         </dependency>
         <dependency>
         	<groupId>org.eclipse</groupId>
         	<artifactId>org.eclipse.core.runtime</artifactId>
-        	<version>3.5.0.v20090525</version>
         </dependency>
         <dependency>
         	<groupId>org.eclipse</groupId>
         	<artifactId>org.eclipse.ui.workbench</artifactId>
-        	<version>3.5.1.M20090826-0800a</version>
         </dependency>
     </dependencies>
 </project>
