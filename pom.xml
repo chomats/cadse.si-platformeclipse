@@ -105,6 +105,7 @@
         	<groupId>org.eclipse</groupId>
         	<artifactId>swt</artifactId>
         	<version>3.5.1.v3555a</version>
+        	<type>pom</type>
         </dependency>
         <dependency>
         	<groupId>org.eclipse</groupId>
