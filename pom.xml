@@ -26,6 +26,7 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
+                    <manifestLocation>META-INF</manifestLocation>
                     <instructions>
                    		<Bundle-SymbolicName>${pom.name};singleton:=true</Bundle-SymbolicName>
                         <Bundle-Name>${pom.name}</Bundle-Name>
@@ -33,27 +34,10 @@
                         <Export-Package>fr.imag.adele.fede.workspace.si.platformeclipse</Export-Package>
                         <Private-Package></Private-Package>
                         <Import-Package>*</Import-Package>
+						<Ipojo-auto-start>true</Ipojo-auto-start>
+                       	<_removeheaders>Bnd-LastModified</_removeheaders>
                     </instructions>
                 </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>install</phase>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                        <configuration>
-                            <tasks>
-                                <mkdir dir="${basedir}/META-INF/" />
-                                <copy todir="${basedir}/META-INF/" preservelastmodified="true">
-                                    <fileset dir="${basedir}/target/classes/META-INF"/>
-                                </copy>
-                            </tasks>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
             <!-- iPOJO Maven Plugin Configuration : nothing to do -->
 			<plugin>
