@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>bundle</packaging>
+    <groupId>fr.imag.adele.cadse</groupId>
+    <artifactId>si.platformeIDE</artifactId>
+    <name>fr.imag.adele.cadse.si.platformeEclipse</name>
+    <version>2.3.0-SNAPSHOT</version>
+    <parent>
+		<artifactId>fr.imag.adele.cadse.parent.ipojo</artifactId>
+		<groupId>fr.imag.adele.cadse</groupId>
+		<version>2.3.0-SNAPSHOT</version>
+		<relativePath>../fr.imag.adele.cadse.parent.ipojo</relativePath>
+	</parent>
+	
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                   		<Export-Package>fr.imag.adele.fede.workspace.si.platformeclipse</Export-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>as.platformeIDE</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.eclipse</groupId>
+        	<artifactId>org.eclipse.osgi</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.eclipse</groupId>
+        	<artifactId>org.eclipse.ui.ide</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.eclipse</groupId>
+        	<artifactId>swt</artifactId>
+        	<type>pom</type>
+        </dependency>
+        <dependency>
+        	<groupId>org.eclipse</groupId>
+        	<artifactId>org.eclipse.equinox.common</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.eclipse</groupId>
+        	<artifactId>org.eclipse.jface</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.eclipse</groupId>
+        	<artifactId>org.eclipse.core.runtime</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.eclipse</groupId>
+        	<artifactId>org.eclipse.ui.workbench</artifactId>
+        </dependency>
+    </dependencies>
+</project>
+
+
+
+
