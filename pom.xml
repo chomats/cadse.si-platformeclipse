@@ -24,6 +24,11 @@
                 <configuration>
                     <instructions>
                    		<Export-Package>fr.imag.adele.fede.workspace.si.platformeclipse</Export-Package>
+                   		<Include-Resource>
+						  build.properties=build.properties,
+			              plugin.xml=plugin.xml,
+			              LICENSE-2.0.txt=LICENSE-2.0.txt
+			            </Include-Resource>
                     </instructions>
                 </configuration>
             </plugin>
