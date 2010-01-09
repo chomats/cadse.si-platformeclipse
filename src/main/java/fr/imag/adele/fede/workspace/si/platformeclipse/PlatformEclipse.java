@@ -236,7 +236,7 @@ public class PlatformEclipse implements IPlatformIDE, BundleListener {
 					logException(e);
 				}
 			}
-			b = Platform.getBundle("fr.imag.adele.ipojo.autostart");
+			b = Platform.getBundle("fr.imag.adele.cadse.ipojo.autostart");
 			if (b != null) {
 				try {
 					if (b.getState() != Bundle.ACTIVE) {
