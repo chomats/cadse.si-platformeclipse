@@ -23,7 +23,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                   		<Export-Package>fr.imag.adele.fede.workspace.si.platformeclipse</Export-Package>
+                   		<Export-Package>fr.imag.adele.fede.workspace.si.platformeclipse;version="${version.cadse}"</Export-Package>
                    		<Include-Resource>
 						  build.properties=build.properties,
 			              plugin.xml=plugin.xml,
