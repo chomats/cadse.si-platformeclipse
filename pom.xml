@@ -29,6 +29,10 @@
 			              plugin.xml=plugin.xml,
 			              LICENSE-2.0.txt=LICENSE-2.0.txt
 			            </Include-Resource>
+			            <Import-Package>org.eclipse.core.runtime;registry=!,
+			            org.eclipse.core.internal.runtime;common=!,
+			            org.eclipse.ui;ui.workbench=!,
+			            *</Import-Package>
                     </instructions>
                 </configuration>
             </plugin>
