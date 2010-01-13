@@ -33,6 +33,7 @@
 			            org.eclipse.core.internal.runtime;common=!,
 			            org.eclipse.ui;ui.workbench=!,
 			            *</Import-Package>
+			            <Require-Bundle>org.eclipse.equinox.common</Require-Bundle>
                     </instructions>
                 </configuration>
             </plugin>
