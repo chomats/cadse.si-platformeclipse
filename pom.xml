@@ -72,6 +72,10 @@
         	<groupId>org.eclipse</groupId>
         	<artifactId>org.eclipse.ui.workbench</artifactId>
         </dependency>
+        <dependency>
+        	<groupId>fr.imag.adele.cadse</groupId>
+        	<artifactId>si.uiplatform.swt</artifactId>
+        </dependency>
     </dependencies>
 </project>
 

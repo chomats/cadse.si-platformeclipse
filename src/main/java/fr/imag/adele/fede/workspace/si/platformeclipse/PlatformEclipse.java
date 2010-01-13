@@ -52,9 +52,11 @@ import org.osgi.framework.BundleListener;
 
 import fr.imag.adele.cadse.as.platformide.IPlatformIDE;
 import fr.imag.adele.cadse.as.platformide.IPlatformListener;
+import fr.imag.adele.cadse.core.CadseDomain;
 import fr.imag.adele.cadse.core.CadseException;
 import fr.imag.adele.cadse.core.CadseRuntime;
 import fr.imag.adele.cadse.core.Item;
+import fr.imag.adele.cadse.si.workspace.uiplatform.swt.dialog.CadseDialog;
 
 /**
  * @generated
@@ -642,8 +644,7 @@ public class PlatformEclipse implements IPlatformIDE, BundleListener {
 	}
 
 	public CadseRuntime[] openDialog(boolean askToErase) {
-		// TODO Auto-generated method stub
-		return null;
+		return CadseDialog.openDialog(askToErase);
 	}
 
 	public void refresh(Item item) {
