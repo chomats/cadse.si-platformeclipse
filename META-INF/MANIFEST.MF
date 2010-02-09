@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Export-Package: fr.imag.adele.fede.workspace.si.platformeclipse;uses:=
+ "org.eclipse.core.runtime,org.osgi.framework,org.eclipse.osgi.service
+ .datalocation,fr.imag.adele.cadse.as.platformide,org.eclipse.ui.inter
+ nal.ide,org.eclipse.ui,org.eclipse.osgi.util,fr.imag.adele.cadse.si.w
+ orkspace.uiplatform.swt.dialog,fr.imag.adele.cadse.core,org.eclipse.s
+ wt.widgets,org.eclipse.jface.dialogs";version="2.3.0"
+Private-Package: .
+Built-By: chomats
+Tool: Bnd-0.0.357
+Bundle-Name: fr.imag.adele.cadse.si.platformeEclipse
+Created-By: Apache Maven Bundle Plugin
+Require-Bundle: org.eclipse.equinox.common
+Bundle-Vendor: Adele/LIG/ Grenoble University, France
+Build-Jdk: 1.6.0_17
+Bundle-Version: 2.3.0.SNAPSHOT
+Ipojo-auto-start: true
+Bundle-ManifestVersion: 2
+Import-Package: fr.imag.adele.cadse.as.platformide;version="2.3",fr.im
+ ag.adele.cadse.core;version="2.3",fr.imag.adele.cadse.si.workspace.ui
+ platform.swt.dialog;version="2.3",fr.imag.adele.fede.workspace.si.pla
+ tformeclipse;version="2.3",org.eclipse.core.internal.runtime,org.ecli
+ pse.core.runtime;version="3.4",org.eclipse.jface.dialogs,org.eclipse.
+ osgi.service.datalocation;version="1.2",org.eclipse.osgi.util;version
+ ="1.1",org.eclipse.swt.widgets,org.eclipse.ui,org.eclipse.ui.internal
+ .ide,org.osgi.framework;version="1.3"
+Bundle-SymbolicName: fr.imag.adele.cadse.si.platformeEclipse;singleton
+ :=true
+Bundle-DocURL: http://www-adele.imag.fr/
+
