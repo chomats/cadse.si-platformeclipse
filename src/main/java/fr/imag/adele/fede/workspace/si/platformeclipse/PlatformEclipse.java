@@ -56,6 +56,7 @@ import fr.imag.adele.cadse.core.CadseDomain;
 import fr.imag.adele.cadse.core.CadseException;
 import fr.imag.adele.cadse.core.CadseRuntime;
 import fr.imag.adele.cadse.core.Item;
+import fr.imag.adele.cadse.core.content.ContentItem;
 import fr.imag.adele.cadse.si.workspace.uiplatform.swt.dialog.CadseDialog;
 
 /**
@@ -661,5 +662,10 @@ public class PlatformEclipse implements IPlatformIDE, BundleListener {
 	public void setReadOnly(Item item, boolean readonly) {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	public String getRessourceName(ContentItem contentItem) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
