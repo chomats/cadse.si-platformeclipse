@@ -29,6 +29,7 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.Status;
@@ -665,7 +666,12 @@ public class PlatformEclipse implements IPlatformIDE, BundleListener {
 	}
 	
 	public String getRessourceName(ContentItem contentItem) {
-		// TODO Auto-generated method stub
+		IResource r = contentItem.getMainMappingContent(IResource.class);
+		if (r != null)
+			return r.getName();
+		File f = contentItem.getMainMappingContent(File.class);
+		if (f != null)
+			return f.getName();
 		return null;
 	}
 }
