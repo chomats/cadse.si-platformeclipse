@@ -30,6 +30,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.eclipse.core.resources.IResource;
+import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.Status;
@@ -621,13 +622,11 @@ public class PlatformEclipse implements IPlatformIDE, BundleListener {
 	}
 
 	public File getLocation() {
-		// TODO Auto-generated method stub
-		return null;
+		return ResourcesPlugin.getWorkspace().getRoot().getLocation().toFile();
 	}
 
 	public boolean inDevelopmentMode() {
-		// TODO Auto-generated method stub
-		return false;
+		return Platform.inDevelopmentMode();
 	}
 
 	public void log(String type, String message, Throwable e) {
