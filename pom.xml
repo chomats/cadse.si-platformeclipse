@@ -74,8 +74,16 @@
         	<artifactId>org.eclipse.ui.workbench</artifactId>
         </dependency>
         <dependency>
-        	<groupId>fr.imag.adele.cadse</groupId>
+        	<groupId>${project.groupId}</groupId>
         	<artifactId>si.uiplatform.swt</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>as.cu</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>${project.groupId}</groupId>
+        	<artifactId>cu.core</artifactId>
         </dependency>
     </dependencies>
 </project>
