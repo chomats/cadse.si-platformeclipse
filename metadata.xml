@@ -4,6 +4,7 @@
 		<callback transition="validate" method="start"/>
 		<callback transition="invalidate" method="stop"/>
 		<provides specification="fr.imag.adele.cadse.as.platformide.IPlatformIDE"/>
+		<controller field="resourceStarted"/>
 	</component>
 	<instance component="fr.imag.adele.fede.workspace.si.platformeclipse.PlatformEclipse" name="fr.imag.adele.cadse.si.workspace.platformeclipse.instance"/>
 </ipojo>
