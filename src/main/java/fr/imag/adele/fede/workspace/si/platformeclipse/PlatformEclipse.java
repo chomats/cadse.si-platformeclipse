@@ -96,6 +96,11 @@ public class PlatformEclipse implements IPlatformIDE, BundleListener {
 
 	public PlatformEclipse(BundleContext cxt) {
 		this.cxt = cxt;
+		Bundle resourceBundle = findBundle(RESOURCES_BUNDLE_ID);
+		if (resourceBundle != null && resourceBundle.getState() == Bundle.ACTIVE) {
+			setResourceStarted();
+		}
+		cxt.addBundleListener(this);
 	}
 
 	public void start() {
@@ -107,18 +112,13 @@ public class PlatformEclipse implements IPlatformIDE, BundleListener {
 		// // TODO Auto-generated catch block
 		// e.printStackTrace();
 		// }
-		Bundle resourceBundle = findBundle(RESOURCES_BUNDLE_ID);
-		if (resourceBundle != null && resourceBundle.getState() == Bundle.ACTIVE) {
-			setResourceStarted();
-		}
+		
 		Bundle uiBundle = findBundle(UI_BUNDLE_ID);
 		if (uiBundle != null && uiBundle.getState() == Bundle.ACTIVE) {
 			if (PlatformUI.isWorkbenchRunning()) {
 				setUIStarted();
 			}
 		}
-
-		cxt.addBundleListener(this);
 	}
 
 	public void stop() {
