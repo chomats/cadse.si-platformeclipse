@@ -72,6 +72,7 @@
         <dependency>
         	<groupId>org.eclipse</groupId>
         	<artifactId>swt</artifactId>
+		<version>3.6.0-v3650</version>
         	<type>pom</type>
         </dependency>
         <dependency>
